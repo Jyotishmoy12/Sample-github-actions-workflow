@@ -9,6 +9,8 @@ on:
   pull_request:
     branches:
       - main
+      
+  workflow_dispatch:
 
 jobs:
   on-push:
@@ -17,7 +19,7 @@ jobs:
     steps:
       - name: "Running on main push"
         run: echo "Running on main push"
-    
+
   on-pull-request:
     if: github.event_name == 'pull_request' # only run on pull request
     runs-on: ubuntu-latest
