@@ -12,7 +12,7 @@ on:
     types:
       - closed
 
-  workflow_dispatch:
+  workflow_dispatch: # manually trigger the workflow from the UI
 
 jobs:
   on-push:
